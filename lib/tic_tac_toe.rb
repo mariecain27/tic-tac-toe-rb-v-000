@@ -44,6 +44,10 @@ end
 #  end
 #end
 
+#def current_player(board)
+#   
+#end
+
 
 #def position_taken?(board, index)
 #  !(board[index].nil? || board[index] == " ")
