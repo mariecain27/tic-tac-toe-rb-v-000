@@ -39,18 +39,17 @@ def turn(board)
 end
 
 def play(board)
-#  counter = 0
-#  while counter < 9
-#   counter += 1
-#   turn(board)
-#  end
   until over?(board) 
     turn(board)
+  end
+
+  if draw?(board)
+    puts "Cat's Game!"
   end
   
   puts "Congratulations #{winner(board)}!"
   
-  end
+end
 
 WIN_COMBINATIONS = [
   [0,1,2], 
