@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -14,7 +14,6 @@ end
 
 def move(board, index, current_player)
   board[index] = current_player(board)
-  binding.pry
 end
 
 def position_taken?(board, index)
