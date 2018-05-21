@@ -73,21 +73,21 @@ def won?(board)
    end
 end
 
-#def full?(board)
-#  board.all? do |free|
-#  free == "X" || free == "O"
-#  end
-#end
+def full?(board)
+  board.all? do |free|
+  free == "X" || free == "O"
+  end
+end
 
-#def draw?(board)
-# if !won?(board) && full?(board)
-#   true
-# elsif !won?(board) && !full?(board)
-#  false
-# elsif won?(board)
-#  false
-# end 
-#end
+def draw?(board)
+ if !won?(board) && full?(board)
+   true
+ elsif !won?(board) && !full?(board)
+  false
+ elsif won?(board)
+  false
+ end 
+end
 
 #def over?(board)
 #  won?(board) || draw?(board) || full?(board) 
