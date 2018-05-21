@@ -48,6 +48,8 @@ def play(board)
     turn(board)
   end
   
+  if won?
+    puts "You won!"
 end
 
 WIN_COMBINATIONS = [
