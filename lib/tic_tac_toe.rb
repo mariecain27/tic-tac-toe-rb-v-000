@@ -93,13 +93,13 @@ def over?(board)
   won?(board) || draw?(board) || full?(board) 
 end
 
-#def winner(board)
-# if won?(board)
-#   board[won?(board).first]
-# else
-#   nil
-# end
-#end
+def winner(board)
+ if won?(board)
+   board[won?(board).first]
+ else
+   nil
+ end
+end
 
 #def turn_count(board)
 #  counter = 0
