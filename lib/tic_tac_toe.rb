@@ -1,3 +1,5 @@
+require pry
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -12,6 +14,7 @@ end
 
 def move(board, index, current_player)
   board[index] = current_player(board)
+  binding.pry
 end
 
 def position_taken?(board, index)
@@ -99,7 +102,7 @@ def turn_count(board)
   return counter
 end
 
-def current_player(board)
+def current_player(board) 
   if turn_count(board).even?
     player = "X"
   elsif turn_count(board).odd?
