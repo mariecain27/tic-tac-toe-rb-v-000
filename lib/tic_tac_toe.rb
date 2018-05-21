@@ -1,4 +1,3 @@
-# Helper Methods
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -48,7 +47,6 @@ end
 #  !(board[index].nil? || board[index] == " ")
 #end
 
-# Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0,1,2], 
   [3,4,5],
