@@ -35,7 +35,7 @@ def turn(board)
   end
 end
 
-# Define your play method below   ?????? #TURN COUNT???
+# Define your play method below   
 #def play(board)
 #  counter = 0
 #  while counter < 9
@@ -43,11 +43,6 @@ end
 #   turn(board)
 #  end
 #end
-
-#def current_player(board)
-# The #current_player method should take in an argument of the game board and use the #turn_count method to determine if it is "X"'s turn or "O"'s.
-#end
-
 
 #def position_taken?(board, index)
 #  !(board[index].nil? || board[index] == " ")
@@ -111,11 +106,11 @@ def turn_count(board)
   return counter
 end
 
-#def current_player(board)
-#  if turn_count(board).even?
-#    player = "X"
-#  elsif turn_count(board).odd?
-#    player = "O"
-#  end
-#  return player
-#end
+def current_player(board)
+  if turn_count(board).even?
+    player = "X"
+  elsif turn_count(board).odd?
+    player = "O"
+  end
+  return player
+end
