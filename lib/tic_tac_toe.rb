@@ -65,13 +65,13 @@ WIN_COMBINATIONS = [
   [2,4,6]
   ]
 
-#def won?(board)
-#  WIN_COMBINATIONS.detect do |winning_combo|
-#   board[winning_combo[0]] == board[winning_combo[1]] &&
-#   board[winning_combo[1]] == board[winning_combo[2]] &&
-#   position_taken?(board, winning_combo[0])
-#   end
-#end
+def won?(board)
+  WIN_COMBINATIONS.detect do |winning_combo|
+   board[winning_combo[0]] == board[winning_combo[1]] &&
+   board[winning_combo[1]] == board[winning_combo[2]] &&
+   position_taken?(board, winning_combo[0])
+   end
+end
 
 #def full?(board)
 #  board.all? do |free|
